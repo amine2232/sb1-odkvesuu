@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Zuzz TV</title>
+  </head>
+  <body class="body-2">
+    <div class="min-h-full flex flex-col">
+      <header class="hidden lg:flex justify-between items-center h-[62px] xl:w-[1300px] xl:mx-auto px-3 xl:px-0 mb-[19.5px] pt-4">
+        <div class="flex items-center">
+          <div class="relative flex items-center">
+            <a aria-current="page" class="active" href="./index.html">
+              <div class="h-[52px] w-[153px]">
+                <img class="h-[52px] w-[153px]" height="52" width="153" loading="lazy" src="./assets/logo-ajja.png">
+              </div>
+            </a>
+          </div>
+          <div class="bg-whiteTransparent flex items-center h-[42px] rounded-[8px] ml-[27px]">
+            <div tabindex="-1" class="time-toggler z-50 outline-none h-full relative text-white w-max text-sm justify-center flex items-center cursor-pointer">
+              <svg class="stroke-blue w-[18px] h-[18px] ml-[20px] mr-[5px] lg:mr-[15px] lg:block hidden" viewBox="0 0 18 18" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M9 6.5V9.43748L11 11.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="whitespace-nowrap font-rubikRegular">GMT +5</span>
+              <svg class="rotate-90 w-[8px] h-[12px] stroke-white ml-2 transform" viewBox="0 0 8 12" fill="none">
+                <path d="M1.06055 10.25L4.78055 6.53C5.07245 6.23696 5.07245 5.76304 4.78055 5.47L1.06055 1.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <ul class="text-sm backdrop-blur absolute hidden bg-whiteTransparent thinScrollbar overflow-y-scroll w-[80%] min-w-max h-max max-h-52 lg:top-12 top-7 lg:left-[45px] lg:right-auto right-[-2px] z-10 rounded-lg">
+                <li>
+                  <div class="hover:bg-blue block p-2">GMT -12</div>
+                </li>
+                <li>
+                  <div class="hover:bg-blue block p-2">GMT -11</div>
+                </li>
+              </ul>
+            </div>
+            <span class="lg:bg-black text-white text-[20px] bg-none rounded-[8px] flex items-center justify-center lg:w-[85px] lg:ml-[20px] lg:mr-[5px] h-[32px] font-rubikBold">13:54</span>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="flex lg:items-center flex-col-reverse lg:flex-row py-[10px] lg:py-0">
+            <div class="open-why-zuzz cursor-pointer text-white mt-3 lg:mt-0 hidden sm:flex items-center text-sm lg:text-base px-[10px] lg:px-0 lg:mr-[26px] hover:text-[#1AE683] hoverFillLink"><span>Why AjjaTV?</span></div>
+            <a class="text-white flex items-center text-sm lg:text-base px-[10px] lg:px-0 lg:mr-[26px] hover:text-[#1AE683] hoverFillLink" href="./faq.html">
+              <svg class="w-[25px] lg:w-[20px] h-[25px] lg:h-[20px] mr-[10px] fill-white" id="lined" viewBox="0 0 64 64">
+                <path class="cls-1" d="M32,26.63954a3.02731,3.02731,0,0,0-3.02753,3.02753v17.5041a3.02753,3.02753,0,0,0,6.05506,0V29.66707A3.0273,3.0273,0,0,0,32,26.63954Z"></path>
+                <path class="cls-1" d="M28.16517,20.63814c.1275,5.05678,7.54148,5.05774,7.66965.00008C35.70739,15.58159,28.29341,15.58055,28.16517,20.63814Z"></path>
+                <path class="cls-1" d="M4.00006,31.98739A28,28,0,0,0,60,31.98761C58.46753-5.14754,5.53807-5.15833,4.00006,31.98739Zm6.05506,0a21.94491,21.94491,0,0,1,43.88982-.00015C52.7442,61.09183,11.26022,61.10033,10.05512,31.98739Z"></path>
+              </svg>
+              <span>FAQ?</span>
+            </a>
+
+            <div class="notification relative flex items-center">
+              <a class="lg:mr-[26px] cursor-pointer">
+                <img src="./assets/notification.svg" alt="" class="block">
+              </a>
+
+              <div class="notification-dropdown absolute top-[calc(100%+10px)] z-50 right-0 bg-white rounded-lg py-5 px-[10px] w-[391px]">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-rubikMedium py-[10px] px-3">Notifications</h3>
+                </div>
+
+                <ul class="list-none mt-2">
+                  <li class="mb-1 flex gap-4 py-2 cursor-pointer hover:bg-[#71727166] rounded-md px-2">
+                    <div class="mt-1 min-w-[35px] h-[35px] w-[35px]"><img title="NFL" class="h-[35px] w-[35px]" height="35" width="35" loading="lazy" alt="NFL" src="https://img.zuzz.tv/assets/menu/9465.png"></div>
+                      <div class="">Upcoming NFL Match, Watch the live stream Now</div>
+                  </li>
+                  <li class="mb-1 flex gap-4 py-2 cursor-pointer hover:bg-[#71727166] rounded-md px-2">
+                    <div class="mt-1 min-w-[35px] h-[35px] w-[35px]"><img title="NFL" class="h-[35px] w-[35px]" height="35" width="35" loading="lazy" alt="NFL" src="https://img.zuzz.tv/assets/menu/957.png"></div>
+                    <div class="">Upcoming NFL Match, Watch the live stream Now</div>
+                  </li>
+                  <li class="flex gap-4 py-2 cursor-pointer hover:bg-[#71727166] rounded-md px-2">
+                    <div class="mt-1 min-w-[35px] h-[35px] w-[35px]"><img title="NFL" class="h-[35px] w-[35px]" height="35" width="35" loading="lazy" alt="NFL" src="https://img.zuzz.tv/assets/menu/NCAAB.png"></div>
+                    <div class="">Upcoming NFL Match, Watch the live stream Now. lorem ipsum la mata data de capri li cargo.</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex"><a href="https://billing.zuzz.tv/member" class="bg-[#1AE683] h-[42px] px-[18px] py-[1px] flex items-center gap-[10px] text-black font-rubikMedium rounded-lg">
+              <img src="./assets/user.svg" alt="" class="block">
+              My Account
+            </a></div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="posSticky top-0 bottom-0 left-0 right-0 z-[51] lg:z-0 xl:w-[1300px] xl:mx-auto">
+        <div class="h-16 lg:hidden">
+          <div class="w-full flex items-center justify-center relative border-b border-blue z-50 h-[72px]">
+            <div class="absolute left-5 top-7">
+              <div class="nav-toggler lg:hidden h-[12px] w-[16px] block relative cursor-pointer ">
+                <span class="top-0 bg-white h-0.5 absolute w-full rounded-xl left-0 transition-all"></span>
+                <span class="top-[5px] bg-white h-0.5 absolute w-full rounded-xl left-0 transition-all"></span>
+                <span class="top-[5px] bg-white h-0.5 absolute w-full rounded-xl left-0 transition-all"></span>
+                <span class="top-[10px] bg-white h-0.5 absolute w-full rounded-xl left-0 transition-all"></span>
+              </div>
+            </div>
+            <div class="absolute left-12 top-4 notification">
+              <a class="cursor-pointer">
+                <img src="./assets/notification.svg" alt="" class="block">
+              </a>
+              <div class="notification-dropdown absolute top-[calc(100%+10px)] z-50 left-0 bg-white rounded-lg pt-3 pb-5 px-[5px] w-[250px]">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-rubikMedium py-[10px] px-3">Notifications</h3>
+                </div>
+
+                <ul class="list-none mt-2">
+                  <li class="mb-1 flex gap-4 py-2 cursor-pointer hover:bg-[#71727166] rounded-md px-2">
+                    <div class="mt-1 min-w-[35px] h-[35px] w-[35px]"><img title="NFL" class="h-[35px] w-[35px]" height="35" width="35" loading="lazy" alt="NFL" src="https://img.zuzz.tv/assets/menu/9465.png"></div>
+                      <div class="">Upcoming NFL Match, Watch the live stream Now</div>
+                  </li>
+                  <li class="mb-1 flex gap-4 py-2 cursor-pointer hover:bg-[#71727166] rounded-md px-2">
+                    <div class="mt-1 min-w-[35px] h-[35px] w-[35px]"><img title="NFL" class="h-[35px] w-[35px]" height="35" width="35" loading="lazy" alt="NFL" src="https://img.zuzz.tv/assets/menu/957.png"></div>
+                    <div class="">Upcoming NFL Match, Watch the live stream Now</div>
+                  </li>
+                  <li class="flex gap-4 py-2 cursor-pointer hover:bg-[#71727166] rounded-md px-2">
+                    <div class="mt-1 min-w-[35px] h-[35px] w-[35px]"><img title="NFL" class="h-[35px] w-[35px]" height="35" width="35" loading="lazy" alt="NFL" src="https://img.zuzz.tv/assets/menu/NCAAB.png"></div>
+                    <div class="">Upcoming NFL Match, Watch the live stream Now. lorem ipsum la mata data de capri li cargo.</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="relative flex items-center">
+              <a aria-current="page" class="active" href="./index.html">
+                <div class="h-[52px] w-[90px]"><img class="h-[52px] w-[90px]" height="52" width="90" loading="lazy" src="./assets/logo-ajja-mobile.png"></div>
+              </a>
+            </div>
+            <div class="time-toggler absolute flex-col-reverse right-2 flex items-center mt-[-8px]">
+              <div tabindex="-1" class="mr-1 mt-1 z-50 outline-none  relative text-white w-max text-sm justify-center flex items-center cursor-pointer">
+                <svg class="stroke-blue w-[18px] h-[18px] ml-[20px] mr-[5px] lg:mr-[15px] lg:block hidden" viewBox="0 0 18 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 6.5V9.43748L11 11.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="whitespace-nowrap font-rubikRegular">GMT +5</span>
+                <svg class="rotate-90 w-[8px] h-[12px] stroke-white ml-2 transform" viewBox="0 0 8 12" fill="none">
+                  <path d="M1.06055 10.25L4.78055 6.53C5.07245 6.23696 5.07245 5.76304 4.78055 5.47L1.06055 1.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <ul class="hidden text-sm backdrop-blur absolute false bg-whiteTransparent thinScrollbar overflow-y-scroll w-[80%] min-w-max h-max max-h-52 lg:top-12 top-7 lg:left-[45px] lg:right-auto right-[-2px] z-10 rounded-lg">
+                  <li>
+                    <div class="hover:bg-blue block p-2">GMT -12</div>
+                  </li>
+                  <li>
+                    <div class="hover:bg-blue block p-2">GMT -11</div>
+                  </li>
+                </ul>
+              </div>
+              <span class=" mt-2 mr-1 bg-[#FFFFFF1A] text-white  text-[20px] rounded-[8px] flex items-center justify-center px-2 py-[1px] font-rubikBold">14:05</span>
+            </div>
+            <div class="mobile-nav hidden bg-[#0B0C0F] w-full absolute overflow-y-auto min-h-[calc(100vh-64px)] bottom-0 top-16 right-0 left-0 flex-col px-3 py-4">
+              <div class="flex items-center">
+                <div class="flex lg:items-center flex-col-reverse lg:flex-row py-[10px] lg:py-0">
+
+                  <div class="open-why-zuzz mt-4 mb-2 pl-2 cursor-pointer text-white lg:mt-0 flex items-center text-sm lg:text-base hover:text-[#1AE683] hoverFillLink"><span>Why AjjaTV?</span></div>
+
+                  <a class="text-white flex items-center text-sm lg:text-base px-[10px] lg:px-0 lg:mr-10 hover:text-[#1AE683] hoverFillLink" href="./faq.html">
+                    <svg class="w-[25px] lg:w-[20px] h-[25px] lg:h-[20px] mr-[10px] fill-white" id="lined" viewBox="0 0 64 64">
+                      <path class="cls-1" d="M32,26.63954a3.02731,3.02731,0,0,0-3.02753,3.02753v17.5041a3.02753,3.02753,0,0,0,6.05506,0V29.66707A3.0273,3.0273,0,0,0,32,26.63954Z"></path>
+                      <path class="cls-1" d="M28.16517,20.63814c.1275,5.05678,7.54148,5.05774,7.66965.00008C35.70739,15.58159,28.29341,15.58055,28.16517,20.63814Z"></path>
+                      <path class="cls-1" d="M4.00006,31.98739A28,28,0,0,0,60,31.98761C58.46753-5.14754,5.53807-5.15833,4.00006,31.98739Zm6.05506,0a21.94491,21.94491,0,0,1,43.88982-.00015C52.7442,61.09183,11.26022,61.10033,10.05512,31.98739Z"></path>
+                    </svg>
+                    <span>FAQ?</span>
+                  </a>
+                  <div class="flex mb-5">
+                    <a href="https://billing.zuzz.tv/member" class="bg-[#1AE683] h-[42px] px-[18px] py-[1px] flex items-center gap-[10px] text-black font-rubikMedium rounded-lg">
+                      <img src="./assets/user.svg" alt="" class="block">
+                      My Account
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="overflow-hidden xl:w-[1300px] px-[12px] xl:px-0 relative flex flex-grow-[1] flex-col w-full mx-0 xl:mx-auto py-8">
+        <div class="flex flex-col items-center">
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">Terms Of Conditions</span><span class="text-white">By accessing this website we assume you accept these terms and conditions in full.
+            Do not continue to use the website if you do not accept all of the terms and conditions stated on this page.
+            The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any
+            or all Agreements: "Client", “You” and “Your” refers to you, the person accessing this website and accepting
+            the Company’s terms and conditions. "The Company", “Ourselves”, “We”, “Our” and "Us", refers to our Company.
+            “Party”, “Parties”, or “Us”, refers to both the Client and ourselves, or either the Client or ourselves.
+            All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of
+            our assistance to the Client in the most appropriate manner, whether by formal meetings of a fixed duration,
+            or any other means, for the express purpose of meeting the Client’s needs in respect of provision of the Company’s
+            stated services/products, in accordance with and subject to. Any use of the above terminology or other words
+            in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">COOKIES</span><span class="text-white">We employ the use of cookies. By using the website you consent to the use of cookies in accordance with our privacy policy.
+            Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each visit.
+            Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting.
+            Some of our affiliate/advertising partners may also use cookies.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">HYPERLINKING TO OUR CONTENT</span><span class="text-white">Written approval is required for individuals and/or organizations to hyperlink to our Web site as follows:
+            By use of our corporate name; or
+            By use of the uniform resource locator (Web address) being linked to; or
+            By use of any other description of our Web site or material being linked to that makes sense within the context and
+            format of content on the linking party's site. No use of zuzz.tv logo or other artwork will be allowed for
+            linking absent a trademark license agreement.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">IFRAMES</span><span class="text-white">Without prior approval and express written permission, you may not create frames around our Web pages
+            or use other techniques that alter in any way the visual presentation or appearance of our Web site.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">RESERVATION OF RIGHTS</span><span class="text-white">We reserve the right at any time and in its sole discretion to request that you remove all links or
+            any particular link to our Web site. You agree to immediately remove all links to our Web site upon such request.
+            We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuing
+            to link to our Web site, you agree to be bound to and abide by these linking terms and conditions.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">REMOVAL OF LINKS AND CONTENT FROM OUR WEBSITE</span><span class="text-white">If you find any link on our Web site or any linked web site objectionable for any reason, you may
+            contact us about this. We will consider requests to remove links but will have no obligation to do so or to respond directly to you.
+            Whilst we endeavor to ensure that the information on this website is correct, we do not warrant its completeness
+            or accuracy; nor do we commit to ensuring that the website remains available or that the material on the website is kept up to date.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">REFUND POLICY AND DISPUTES</span><span class="text-white">Both the Client and ourselves and our associates have the right to terminate any Services Agreement for any reason,
+            including the ending of services that are already underway. If you would like to refund an order with us, please email to support@zuzz.tv
+            or contact us via live chat. Due to the nature of digital service we are providing, Within 24 hours from the purchase of any paid-for
+            service provided by us, Client retains a right to claim a refund for that payment. Refunds are processed within 30 calendar days.
+            As soon as the refund request is received all paid-for services related to that request are canceled. After the 24 hours from the
+            purchase is over, refund requests will not be processed. Beyond that date, the Service is deemed to have begun and is, for all
+            intents and purposes, underway. Previously made recurring charges are subject to a refund on our sole discretion.
+            In all cases, means to process and deliver a refund are decided on zuzz.tv sole discretion. Opening a dispute with your payment
+            processor (bank or otherwise) over an order with zuzz.tv without our prior written consent immediately voids any and all
+            service agreements between you and us. Chargebacks are strictly prohibited and may result in immediate account termination.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">AUTO BILLING</span><span class="text-white">Your zuzz.tv membership will continue until terminated. To use the zuzz.tv service you must have
+            Internet access and provide us with one or more Payment Methods. "Payment Method" means a current, valid, accepted
+            method of payment, as may be updated from time to time, and which may include payment through your account with a third party.
+            Unless you cancel your membership before your billing date, you authorize us to charge the membership fee for the next billing
+            cycle to your Payment Method. In order to cancel the auto-billing function then please contact us at support@zuzz.tv or via
+            live chat. If your card has been charged due to auto-billing then you are not entitled to a refund.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">NOTIFICATION OF CHANGES</span><span class="text-white">zuzz.tv reserves the right to change these conditions from time to time as it sees fit and your continued
+            use of the site will signify your acceptance of any adjustment to these terms.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">DISCLAIMER</span><span class="text-white">To the extent that the website and the information and services on the website are provided,
+            we will not be liable for any loss or damage of any nature. These terms and conditions are governed by and construed
+            in accordance with the laws of Iceland. Any dispute you have which relates to these terms and conditions,
+            or your use of zuzz.tv (whether it be contractual or non-contractual), will be subject to the exclusive jurisdiction
+            of the courts of Iceland.</span>
+          </p>
+          <p class="m-0 flex flex-col w-full md:max-w-[768px] my-2 text-justify"><span class="text-white text-2xl font-rubikBold mb-2">CONTACT DETAILS</span><span class="text-white">If you need to contact us on any matter, please use the support@zuzz.tv email.</span></p>
+        </div>
+      </main>
+
+      <footer class="bg-blackOpacity w-full">
+        <div class="flex flex-wrap w-full items-center justify-between xl:w-[1300px] xl:mx-auto p-5 sm:px-12 py-6 xl:px-0">
+          <div class="flex flex-col items-center md:items-start mx-auto md:mx-0">
+            <span class="text-white mt-2 text-[14px] font-rubikRegular uppercase whitespace-nowrap mb-2">Copyright © 2019-2024 - AJJA TV</span>
+            <div>
+              <div class="mb-3 flex flex-wrap justify-center items-center md:justify-end"><a class=" whitespace-nowrap text-violet text-sm sm:text-base font-rubikRegular cursor-pointer hover:underline pr-3" href="./terms.html">Terms And Conditions</a><span class="text-white">|</span><a class=" whitespace-nowrap text-violet text-sm sm:text-base font-rubikRegular cursor-pointer hover:underline px-3" href="./privacy.html">Privacy Policy</a><span class="text-white">|</span><a class=" whitespace-nowrap text-violet text-sm sm:text-base font-rubikRegular cursor-pointer hover:underline px-3" href="https://billing.zuzz.tv/aff/signup">Affiliates</a><span class="text-white">|</span><a class=" whitespace-nowrap text-violet text-sm sm:text-base font-rubikRegular cursor-pointer hover:underline px-3" href="./contact.html">Contact Us</a></div>
+            </div>
+          </div>
+          <div class="w-full md:w-max items-center flex gap-7 flex-col md:flex-row">
+            <div><img loading="lazy" src="./assets/logo-ajja.png"></div>
+            <span class="text-white">Watch For LESS!</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="warning-multistream fixed inset-0 h-fit z-[999] translate-y-[-200px] m-auto bg-white rounded-lg py-5 px-[10px] w-[500px]">
+      <div class="flex items-center justify-between">
+        <h3 class="text-lg font-rubikMedium py-[10px] px-3">WARNING</h3>
+
+        <a class="p-[10px] warning-close cursor-pointer">
+          <svg class="block" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.21814 7.50003L13.8512 1.86697C14.0495 1.66865 14.0495 1.3471 13.8512 1.1488C13.6528 0.950505 13.3313 0.95048 13.133 1.1488L7.49994 6.78186L1.86691 1.1488C1.66859 0.95048 1.34704 0.95048 1.14874 1.1488C0.950444 1.34713 0.950419 1.66867 1.14874 1.86697L6.78178 7.5L1.14874 13.1331C0.950419 13.3314 0.950419 13.6529 1.14874 13.8512C1.24789 13.9504 1.37787 13.9999 1.50784 13.9999C1.63781 13.9999 1.76776 13.9504 1.86694 13.8512L7.49994 8.2182L13.133 13.8512C13.2321 13.9504 13.3621 13.9999 13.4921 13.9999C13.622 13.9999 13.752 13.9504 13.8512 13.8512C14.0495 13.6529 14.0495 13.3314 13.8512 13.1331L8.21814 7.50003Z" fill="#484848" stroke="black" stroke-width="0.4"/></svg>
+        </a>
+      </div>
+
+      <p class="py-[10px] px-3">Are you sure you want to exit Multi-stream mode?</p>
+
+      <div class="flex gap-3 mt-3 pt-3 border-solid border-t border-gray-200">
+        <a class="report-btn watch-btn px-6 btn-error warning-yes">Yes</a>
+        <a class="report-btn watch-btn px-6  warning-no">No</a>
+      </div>
+    </div>
+
+    <div class="why-zuzz-modal items-center fixed z-[100] text-white top-0 left-0 w-full h-full overflow-auto flex justify-center bg-blackOpacity">
+      <div class="relative">
+        <div class="close-why-zuzz top-[-50px] right-0 cursor-pointer bg-darkBlue w-[40px] absolute h-[40px] flex items-center justify-center rounded-lg">
+          <svg class="stroke-white h-[30px] w-[30px] select-none" viewBox="0 0 24 24" fill="none">
+            <path d="M6 6L18 18M18 6L6 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="xl:w-[63.96vw] xl:h-[35.96vw] w-[79.95vw] h-[44.95vw]">
+            <img class="xl:w-[63.96vw] xl:h-[35.96vw] w-[79.95vw] h-[44.95vw] bg-black" height="899" width="1599" loading="lazy" src="./assets/why-ajja.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
